@@ -61,31 +61,30 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Robot Parkour Learning</h1>
+          <h1 class="title is-1 publication-title">Learning to Catch with Mobile Dexterous Hands</h1>
+          <!-- <h1 class="title is-1 publication-title">Learning to Catch with Mobile Dexterous Hands</h1> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://ziwenzhuang.github.io/">Ziwen Zhuang</a>*&nbsp;&nbsp;
-              <a href="https://zipengfu.github.io/">Zipeng Fu</a>*&nbsp;&nbsp;
-              <a href="https://www.jianrenw.com/">Jianren Wang</a>&nbsp;&nbsp;
-              <a href="http://www.cs.cmu.edu/~cga/">Christopher Atkeson</a>&nbsp;&nbsp;
-              <a href="https://robotics.shanghaitech.edu.cn/people/soeren">Sören Schwertfeger</a>&nbsp;&nbsp;
-              <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>&nbsp;&nbsp;
-              <a href="https://hangzhaomit.github.io/">Hang Zhao</a>
+              <a href="https://hang0610.github.io/">Yuanhang Zhang</a>*&nbsp;&nbsp;
+              <a href="https://tinhal.github.io/">Tianhai Liang</a>*&nbsp;&nbsp;
+              <a href="https://chenzheny.github.io/">Zhenyang Chen</a>&nbsp;&nbsp;
+              <a href="https://yanjieze.com/">Yanjie Ze</a>&nbsp;&nbsp;&nbsp;
+              <a href="http://hxu.rocks/">Huazhe Xu</a>
             </span>
           </div>
           <div class="column">
               <image src="./static/images/logo.jpg" style="width: 60%;"></image>
           </div>
-          <div class="is-size-4 publication-authors">
+          <!-- <div class="is-size-4 publication-authors">
             CoRL 2023 (Oral)
           </div>
           <div class="is-size-4 publication-authors">
             <b style="color:rgb(255, 100, 100);">Best Systems Paper Award Finalist (top 3)</b>
-          </div>
+          </div> -->
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="./resources/Robot_Parkour_Learning.pdf"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
@@ -93,7 +92,7 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <!-- arXiv Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2309.05665"
@@ -161,14 +160,14 @@
                   <span>Code</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="./cn.html" class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fas fa-language"></i>
                   </span>
                   <span>中文</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -183,8 +182,9 @@
       <div class="column is-full-width is-centered has-text-centered">
         <!-- <h2 class="title is-2" style="text-align: center;" id="method-video" >Real-World Robot Parkour Demos</h2> -->
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/M7lDCSF0KP0" title="Robot Parkour Learning (CoRL 2023)"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <!-- <iframe src="https://www.youtube.com/embed/M7lDCSF0KP0" title="Robot Parkour Learning (CoRL 2023)"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <!-- Video -->
         </div>
       </div>
       <!-- <div class="column is-full-width is-centered has-text-centered">
@@ -206,7 +206,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Parkour is a grand challenge for legged locomotion that requires robots to overcome various obstacles rapidly in complex environments. Existing methods can generate either diverse but blind locomotion skills or vision-based but specialized skills by using reference animal data or complex rewards. However, autonomous parkour requires robots to learn generalizable skills that are both vision-based and diverse to perceive and react to various scenarios. In this work, we propose a system for learning a single end-to-end vision-based parkour policy of diverse parkour skills using a simple reward without any reference motion data. We develop a reinforcement learning method inspired by direct collocation to generate parkour skills, including climbing over high obstacles, leaping over large gaps, crawling beneath low barriers, squeezing through thin slits, and running. We distill these skills into a single vision-based parkour policy and transfer it to a quadrupedal robot using its egocentric depth camera. We demonstrate that our system can empower two different low-cost robots to autonomously select and execute appropriate parkour skills to traverse challenging real-world environments.
+            Catching objects in flight (i.e., thrown objects) is a common daily skill for humans, yet it presents a significant challenge for robots. This task requires a robot with agile and accurate motion, a large spatial workspace, and the ability to interact with diverse objects. In this paper, we build a mobile manipulator composed of a mobile base, a 6-DoF arm, and a 12-DoF dexterous hand to tackle such a challenging task. We propose a two-stage reinforcement learning framework to efficiently train a whole-body-control catching policy for this high-DoF system in simulation. The throwing configurations are randomized during the training to improve policy adaptivity for different trajectories of objects in flight. The results show that our trained policy catches randomly thrown trajectories of diverse objects at a high success rate of about 80\% in simulation, with a significant improvement over the baselines. The policy trained in simulation can be directly deployed in the real world with onboard sensing and computation, which achieves catching flying objects thrown by humans.
           </p>
         </div>
       </div>
@@ -216,43 +216,44 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Climb</h2>
+    <h2 class="title is-2" style="text-align: center;">Teaser</h2>
     <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/climb/climb_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/climb/climb_1_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/climb/climb_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/climb/climb_husky_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/climb/climb_night_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/climb/go1_climb_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <img src="./resources/method/distillation.png" alt="" style="width: 90%;" />
       </div>
     </div>
   </div>
 </section>
 
+<!-- <section class="section"></section>
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;">Two-Stage </h2>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <img src="./resources/method/distillation.png" alt="" style="width: 90%;" />
+      </div>
+    </div>
+  </div>
+</section> -->
+
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Leap</h2>
+    <h2 class="title is-2" style="text-align: center;">Catch Diverse Objects in Simulation</h2>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/leap/leap_indoor_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">Video Title 1</p>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/leap/go1_leap_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
@@ -268,7 +269,7 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Crawl</h2>
+    <h2 class="title is-2" style="text-align: center;">Catch Diverse Objects in Real-World</h2>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/crawl/go1_crawl_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
