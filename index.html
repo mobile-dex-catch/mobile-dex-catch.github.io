@@ -78,7 +78,7 @@
             </span>
           </div>
           <div class="column">
-              <image src="./static/images/logo.jpg" style="width: 60%;"></image>
+              <image src="./static/images/logo_dcmm.png" style="width: 80%;"></image>
           </div>
           <!-- <div class="is-size-4 publication-authors">
             CoRL 2023 (Oral)
@@ -187,6 +187,9 @@
       <div class="column is-full-width is-centered has-text-centered">
         <!-- <h2 class="title is-2" style="text-align: center;" id="method-video" >Real-World Robot Parkour Demos</h2> -->
         <div class="publication-video">
+          <!-- <video controls autoplay loop muted playsinline src="./resources/teaser/teaser.mp4" poster="./resources/teaser/teaser.mp4" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video> -->
+          <img src="./resources/cover/cover.gif" alt="" style="width: 90%;" />
+
           <!-- <iframe src="https://www.youtube.com/embed/M7lDCSF0KP0" title="Robot Parkour Learning (CoRL 2023)"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
           <!-- Video -->
@@ -224,7 +227,8 @@
     <h2 class="title is-2" style="text-align: center;">Teaser</h2>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <img src="./resources/method/distillation.png" alt="" style="width: 90%;" />
+        <!-- <img src="./resources/cover/cover.gif" alt="" style="width: 90%;" /> -->
+        <video controls autoplay loop muted playsinline src="./resources/teaser/teaser.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -246,27 +250,31 @@
     <h2 class="title is-2" style="text-align: center;">Catch Diverse Objects in Simulation</h2>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_indoor_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">Video Title 1</p>
+        <video controls autoplay loop muted playsinline src="./resources/simulation/tracking_cube_start_training_better.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for tracking</p>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/go1_leap_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/simulation/tracking_cube_afterTraining.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">After training for a while for tracking</p>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching_start_training.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for catching</p>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching_after_training.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">After training for catching</p>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <!-- <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div> -->
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/simulation/CatchUnseen.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">Generalize to unseen objects</p>
       </div>
     </div>
   </div>
@@ -276,31 +284,31 @@
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Catch Diverse Objects in Real-World</h2>
     <div class="columns is-centered">
-      <video controls autoplay loop muted playsinline src="./resources/crawl/crawl_1_5.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
     </div>
     <div class="columns is-centered">
-      <video controls autoplay loop muted playsinline src="./resources/crawl/go1_crawl_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      <video controls autoplay loop muted playsinline src="./resources/real_world/strange-success-moremove2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
     </div>
     <div class="columns is-centered">
-      <video controls autoplay loop muted playsinline src="./resources/crawl/crawl_1_4.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      <video controls autoplay loop muted playsinline src="./resources/real_world/cylinder-success.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
     </div>
     <!-- <div class="column is-full-width is-centered has-text-centered">
       <video controls autoplay loop muted playsinline src="./resources/crawl/crawl_2_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
     </div> -->
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/real_world/ball-success-ok1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/real_world/strange-success.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -327,17 +335,17 @@
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
         <p>
-          Our parkour policy allows the robot to attempt overcoming an obstacle multiple times if it initially fails. The robot learns to push against the obstacle, ensuring adequate run-up space for subsequent attempts.
+          <!-- The robot we designed has the ability to grasp objects with a long horizon, which leads to this interesting fishing game. -->
         </p>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
+      <!-- <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/retry/retry_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
+      </div> -->
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/retry/retry_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/fishing/fishing_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -346,51 +354,69 @@
 <section class="section">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Method</h2>
-    <h2 class="title is-4" style="text-align: center;">Stage 1: RL Pre-training with Soft Dynamics Constraints</h2>
+    <h2 class="title is-4" style="text-align: center;">Sim2Real Illustration of Catching Motions</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
           <p>
-            In the RL pre-training stage, we allow robots to penetrate obstacles using an automatic curriculum that enforces soft dynamics constraints. This encourages robots to gradually learn to overcome these obstacles while minimizing penetrations. 
+            <!-- In the RL pre-training stage, we allow robots to penetrate obstacles using an automatic curriculum that enforces soft dynamics constraints. This encourages robots to gradually learn to overcome these obstacles while minimizing penetrations.  -->
           </p>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/method/soft-dyanmics.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <!-- <video controls autoplay loop muted playsinline src="./resources/method/soft-dyanmics.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video> -->
+        <img src="./resources/method/catch_motion_v4.png" alt="" style="width: 90%;" />
       </div>
     </div>
-    <h2 class="title is-4" style="text-align: center;">Stage 2: RL Fine-tuning with Hard Dynamics Constraints</h2>
+    <h2 class="title is-4" style="text-align: center;">System Overview</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
           <p>
-            In the RL fine-tuning stage, we enforce all dynamics constraints and fine-tune the behaviors learned in the pre-training stage with realistic dynamics.         </p>
+            <!-- In the RL fine-tuning stage, we enforce all dynamics constraints and fine-tune the behaviors learned in the pre-training stage with realistic dynamics.         </p> -->
           </p>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/method/hard-dynamics.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <!-- <video controls autoplay loop muted playsinline src="./resources/method/hard-dynamics.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video> -->
+        <img src="./resources/method/real_setup.png" alt="" style="width: 90%;" />
       </div>
     </div>
-    <h2 class="title is-4" style="text-align: center;">Stage 3: Learning a Vision-Based Parkour Policy via Distillation</h2>
+    <h2 class="title is-4" style="text-align: center;">Two-Stage Training Framework</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
           <p>
-            After each individual parkour skill is learned, we use DAgger to distill them into a single vision-based parkour policy that can be deployed to a legged robot using only onboard perception and computation power.         
+            <!-- After each individual parkour skill is learned, we use DAgger to distill them into a single vision-based parkour policy that can be deployed to a legged robot using only onboard perception and computation power.          -->
           </p>
         </div>
       </div>
     </div>
     <div class="columns is-centered">
       <div class="column is-three-fifths is-centered has-text-centered">
-        <img src="./resources/method/distillation.png" alt="" style="width: 90%;" />
+        <img src="./resources/method/RL-v3.png" alt="" style="width: 90%;" />
       </div>
     </div>
+    <h2 class="title is-4" style="text-align: center;">Multi-Process Controller</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p>
+            <!-- After each individual parkour skill is learned, we use DAgger to distill them into a single vision-based parkour policy that can be deployed to a legged robot using only onboard perception and computation power.          -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-three-fifths is-centered has-text-centered">
+        <img src="./resources/method/ros_control.png" alt="" style="width: 90%;" />
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -399,30 +425,33 @@
     <h2 class="title is-2" style="text-align: center;">Failure Cases</h2>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/failures/failure-climb-too-high.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/failures/tracking-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
         <div class="content is-two-third has-text-centered">
           <p>
-            The robot fails to climb very high obstacles of 0.8m, three times the robot height.
+            <!-- The robot fails to climb very high obstacles of 0.8m, three times the robot height. -->
           </p>
         </div>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/failures/failure-leap-low-friction.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/failures/tracking-2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
         <div class="content is-two-third has-text-centered">
         <p>
-          The robot fails to leap on a low-friction platform. The rear legs slip during leaping leading to not much forward momentum for the robot to reach the other side.
+          <!-- The robot fails to leap on a low-friction platform. The rear legs slip during leaping leading to not much forward momentum for the robot to reach the other side. -->
         </p>
         </div>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/failures/failure-climb-soft-objects.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/failures/tracking-3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
         <div class="content is-two-third has-text-centered">
         <p>
-          The robot fails to climb a high and soft obstacle. 
+          <!-- The robot fails to climb a high and soft obstacle.  -->
         </p>
         </div>
       </div>
     </div>
+    <p>
+      When deploying the trained policy in the real world, our system may struggle with elastic objects, which tend to rebound off contact surfaces, particularly when both of the object and robot move at high speeds.
+    </p>
   </div>
 </section>
 
@@ -430,12 +459,12 @@
 <section class="section" id="BibTeX">
   <div class="container content">
     <h2 class="titile">BibTeX</h2>
-    <pre><code>@inproceedings{zhuang2023robot,
-  author    = {Zhuang, Ziwen and Fu, Zipeng and Wang, Jianren and Atkeson, Christopher and Schwertfeger, Sören and Finn, Chelsea and Zhao, Hang},
-  title     = {Robot Parkour Learning},
-  booktitle = {Conference on Robot Learning ({CoRL})},
-  year      = {2023},
-}</code></pre>
+    <pre><code>@inproceedings{zhang2023catch,
+      author    = {Yuanhang Zhang, Tianhai Liang, Zhenyang Chen, Yanjie Ze and Huazhe Xu},
+      title     = {Catch It! Learning to Catch in Flight with Mobile Dexterous Hands},
+      booktitle = {IEEE International Conference on Robotics and Automation ({ICRA})},
+      year      = {2025},
+    }</code></pre>
   </div>
 </section>
 
