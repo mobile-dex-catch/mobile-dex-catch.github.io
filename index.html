@@ -247,46 +247,6 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Catch Diverse Objects in Simulation</h2>
-    <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for tracking</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Parallel training)</p>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">After training for a while for tracking</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Able to track)</p>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for catching</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Track easily & Can not Catch)
-        </p>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">After training for catching</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Able to catch)</p>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <!-- <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div> -->
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/CatchUnseen.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">Generalize to unseen objects</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
     <h2 class="title is-2" style="text-align: center;">Catch Diverse Objects in Real-World</h2>
     <div class="columns is-centered">
       <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
@@ -356,10 +316,58 @@
   </div>
 </section>
 
+<section class="section"></section>
+
+</section>
+
 <section class="section">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Method</h2>
-    <h2 class="title is-4" style="text-align: center;">Sim2Real Illustration of Catching Motions</h2>
+    <h2 class="title is-3" style="text-align: center;">Catch Diverse Objects in Simulation</h2>
+    <h2 class="title is-5" style="text-align: left;">Stage 1: Training  for Tarcking
+    </h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for tracking</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">(Parallel training)</p>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">After training for a while for tracking</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">(Able to track)</p>
+      </div>
+    </div>
+    <h2 class="title is-5" style="text-align: left;">Stage 2: Training  for Catching
+
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for catching</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">(Track easily & Can not Catch)
+        </p>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p style="margin-top: 0.5rem; font-weight: bold;">After training for catching</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">(Able to catch)</p>
+      </div>
+    </div>
+
+    <h2 class="title is-4" style="text-align: center;">Generalize to unseen objects
+    <div class="columns is-centered">
+      <!-- <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div> -->
+      <div class="column is-full-width is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./resources/simulation/CatchUnseen.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <!-- <p style="margin-top: 0.5rem; font-weight: bold;">Generalize to unseen objects</p> -->
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="title is-1" style="text-align: center;"> 
+      <h2 class="title is-3" style="text-align: center;">Sim2Real Illustration of Catching Motions</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
@@ -375,7 +383,7 @@
         <img src="./resources/method/catch_motion_v4.png" alt="" style="width: 90%;" />
       </div>
     </div>
-    <h2 class="title is-4" style="text-align: center;">System Overview</h2>
+    <h2 class="title is-3" style="text-align: center;">System Overview</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
@@ -391,7 +399,7 @@
         <img src="./resources/method/real_setup2.png" alt="" style="width: 90%;" />
       </div>
     </div>
-    <h2 class="title is-4" style="text-align: center;">Two-Stage Training Framework</h2>
+    <h2 class="title is-3" style="text-align: center;">Two-Stage Training Framework</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
@@ -406,7 +414,7 @@
         <img src="./resources/method/RL-v3.png" alt="" style="width: 90%;" />
       </div>
     </div>
-    <h2 class="title is-4" style="text-align: center;">Multi-Process Controller</h2>
+    <h2 class="title is-3" style="text-align: center;">Multi-Process Controller</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
