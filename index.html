@@ -215,7 +215,7 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Catching objects in flight (i.e., thrown objects) is a common daily skill for humans, yet it presents a significant challenge for robots. This task requires a robot with agile and accurate motion, a large spatial workspace, and the ability to interact with diverse objects. In this paper, we build a mobile manipulator composed of a mobile base, a 6-DoF arm, and a 12-DoF dexterous hand to tackle such a challenging task. We propose a two-stage reinforcement learning framework to efficiently train a whole-body-control catching policy for this high-DoF system in simulation. The throwing configurations are randomized during the training to improve policy adaptivity for different trajectories of objects in flight. The results show that our trained policy catches randomly thrown trajectories of diverse objects at a high success rate of about 80\% in simulation, with a significant improvement over the baselines. The policy trained in simulation can be directly deployed in the real world with onboard sensing and computation, which achieves catching flying objects thrown by humans.
+            Catching objects in flight (i.e., thrown objects) is a common daily skill for humans, yet it presents a significant challenge for robots. This task requires a robot with agile and accurate motion, a large spatial workspace, and the ability to interact with diverse objects. In this paper, we build a mobile manipulator composed of a mobile base, a 6-DoF arm, and a 12-DoF dexterous hand to tackle such a challenging task. We propose a two-stage reinforcement learning framework to efficiently train a whole-body-control catching policy for this high-DoF system in simulation. The throwing configurations are randomized during the training to improve policy adaptivity for different trajectories of objects in flight. The results show that our trained policy catches randomly thrown trajectories of diverse objects at a high success rate of about 80% in simulation, with a significant improvement over the baselines. The policy trained in simulation can be directly deployed in the real world with onboard sensing and computation, which achieves catching flying objects thrown by humans.
           </p>
         </div>
       </div>
@@ -260,22 +260,26 @@
     <!-- <div class="column is-full-width is-centered has-text-centered">
       <video controls autoplay loop muted playsinline src="./resources/crawl/crawl_2_2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
     </div> -->
+    <div class="columns is-centered">
+    <div class="column is-four-fifths">
       <div class="columns is-centered">
         <div class="column is-full-width is-centered has-text-centered">
-          <video controls autoplay loop muted playsinline src="./resources/real_world/ball-success-ok1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
+          <video controls autoplay loop muted playsinline src="./resources/real_world/ball-success-ok1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 100%;"></video>
         </div>
         <div class="column is-full-width is-centered has-text-centered">
-          <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
+          <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-2.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 100%;"></video>
         </div>
       </div>
       <div class="columns is-centered">
         <div class="column is-full-width is-centered has-text-centered">
-          <video controls autoplay loop muted playsinline src="./resources/real_world/strange-success.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
+          <video controls autoplay loop muted playsinline src="./resources/real_world/strange-success.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 100%;"></video>
         </div>
         <div class="column is-full-width is-centered has-text-centered">
-          <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
+          <video controls autoplay loop muted playsinline src="./resources/real_world/cube-success-3.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 10s0%;"></video>
         </div>
       </div>
+    </div>
+    </div>
   </div>
 </section>
 
@@ -354,47 +358,81 @@
     </div>
 
     <!-- <h2 class="title is-3" style="text-align: center;">Catch Diverse Objects in Simulation</h2> -->
-    <h2 class="title is-5" style="text-align: center;">Stage 1: Training  for Tarcking
-    </h2>
-    <!-- <div class="columns is-centered"> -->
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for tracking</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Parallel training)</p>
+    <h2 class="title is-4" style="text-align: center; margin-top: 2rem">Stage 1: Training  for Tarcking</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p style="margin-top: -0.5rem; font-weight: bold; text-align: center;">The beginning of training</p>
+          <p style="margin-top: -0.5rem">
+            We first train the base and arm control policies in a tracking task parallelly. During the initial phase of training, it is evident that the robot is unable to follow the object's trajectory.         
+          </p>
+        </div>
       </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">After training for a while for tracking</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Able to track)</p>
-      </div>
-    <!-- </div> -->
-    <h2 class="title is-5" style="text-align: center;">
-    </h2>
-    <h2 class="title is-5" style="text-align: center;">
-    </h2>
-    <h2 class="title is-5" style="text-align: center;">Stage 2: Training  for Catching
-    </h2>
-    <!-- <div class="columns is-centered"> -->
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">The beginning of training for catching</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Track easily & Can not Catch)
-        </p>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
-        <p style="margin-top: 0.5rem; font-weight: bold;">After training for catching</p>
-        <p style="margin-top: 0.5rem; font-weight: bold;">(Able to catch)</p>
-      </div>
-    <!-- </div> -->
+    </div>
+    <div class="column is-full-width is-centered has-text-centered">
+      <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%; margin-top: -1.5rem"></video>
+    </div>
 
-    <h2 class="title is-4" style="text-align: center;">Generalize to unseen objects
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p style="margin-top: 0.5rem; font-weight: bold; text-align: center;">After training for a while</p>
+          <p style="margin-top: -0.5rem">
+            After a period of training, the robot has learned to track the trajectory of the object and make contact with it using the palm.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-full-width is-centered has-text-centered">
+      <video controls autoplay loop muted playsinline src="./resources/simulation/Tracking-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;margin-top: -1.5rem"></video>
+    </div>
+
+    <h2 class="title is-4" style="text-align: center; margin-top: 2rem">Stage 2: Training for Catching</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p style="margin-top: -0.5rem; font-weight: bold; text-align: center;">The beginning of training</p>
+          <p style="margin-top: -0.5rem">
+            We continue to train the robot's catching policy. At the early stage of training, the robot tracks the object easily but fails to grasp it.          
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-full-width is-centered has-text-centered">
+      <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-start-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;margin-top: -1.5rem"></video>
+      </p>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p style="margin-top: 0.5rem; font-weight: bold; text-align: center;">After training for catching</p>
+          <p style="margin-top: -0.5rem">
+            Through the two-stage training approach, the robot ultimately achieves the ability to track and catch objects.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-full-width is-centered has-text-centered">
+      <video controls autoplay loop muted playsinline src="./resources/simulation/Catching-after-train-seen-30fps-15s.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;margin-top: -1.5rem"></video>
+    </div>
+
+    <h2 class="title is-4" style="text-align: center; margin-top: 1.5rem">Generalize to unseen objects</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p style="margin-top: -0.5rem">
+            To validate the policy's generalization in simulation, we test with 5 unseen object shapes. And our trained policy demonstrates robust generalization to unseen objects.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="columns is-centered">
       <!-- <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/leap/leap_1_1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div> -->
       <div class="column is-full-width is-centered has-text-centered">
-        <video controls autoplay loop muted playsinline src="./resources/simulation/CatchUnseen.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;"></video>
+        <video controls autoplay loop muted playsinline src="./resources/simulation/CatchUnseen.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%; width: 70%;margin-top: -0.5rem"></video>
         <!-- <p style="margin-top: 0.5rem; font-weight: bold;">Generalize to unseen objects</p> -->
       </div>
     </div>
@@ -421,9 +459,18 @@
 <section class="section">
   <div class="container">
     <h2 class="title is-2" style="text-align: center;">Failure Cases</h2>
-    <p>
+    <!-- <p>
       When deploying the trained policy in the real world, our system may struggle with elastic objects, which tend to rebound off contact surfaces, particularly when both of the object and robot move at high speeds.
-    </p>
+    </p> -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p style="margin-top: -0.5rem">
+            When deploying the trained policy in the real world, our system may struggle with elastic objects, which tend to rebound off contact surfaces, particularly when both of the object and robot move at high speeds.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
         <video controls autoplay loop muted playsinline src="./resources/failures/tracking-1.mp4" poster="./resources/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
@@ -458,12 +505,13 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Funny Case </h2>
+    <h2 class="title is-2" style="text-align: center;">A Funny Case </h2>
     <!-- <h2 class="title is-5" style="text-align: left;">Adaptive long-horizen tracking. </h2> -->
     <!-- <p>
       Adaptive long-horizen tracking.
     </p> -->
-    <h2 class="title is-5" style="text-align: center;">Adaptive long-horizen tracking.</h2>
+    <!-- <h2 style="text-align: center;">In this intriguing fishing game, the system we designed demonstrates the capability of adaptive long-horizon tracking.</h2> -->
+    <h2 style="text-align: center;">In this intriguing fishing game, <em><span style="font-family: Georgia; color:rgb(255, 0, 0)">Catch It!</span></em> demonstrates the capability of adaptive long-horizon tracking.</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
         <div class="content has-text-justified">
@@ -488,7 +536,7 @@
     <pre><code>@inproceedings{zhang2023catch,
       author    = {Yuanhang Zhang, Tianhai Liang, Zhenyang Chen, Yanjie Ze and Huazhe Xu},
       title     = {Catch It! Learning to Catch in Flight with Mobile Dexterous Hands},
-      booktitle = {IEEE International Conference on Robotics and Automation ({ICRA})},
+      journal   = {arXiv preprint arXiv:2409.10319},
       year      = {2025},
     }</code></pre>
   </div>
